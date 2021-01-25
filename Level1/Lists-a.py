@@ -36,3 +36,12 @@ z = ['Alex', 34, 'Brian', 23]
 a = [x,y,z]
 print(a)
 
+names = ['Alex', 'Ben', 'Charlie', 'Daniel', 'Eric']
+
+# print(f'Good morning {names[0]}')
+# print(f'Good morning {names[1]}')
+# print(f'Good morning {names[2]}')
+# print(f'Good morning {names[3]}')
+# print(f'Good morning {names[4]}')
+last_arrived = names.pop()
+print(f'{last_arrived.title()} was the last to arrive')
