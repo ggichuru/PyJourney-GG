@@ -1,3 +1,4 @@
+        ## Using DIRECT FORMULAR
 import math
 
 def getX(a,b,c):
