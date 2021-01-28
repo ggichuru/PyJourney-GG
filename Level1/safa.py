@@ -9,7 +9,7 @@ def getX(a,b,c):
         x = (-b+sqroot)/(2*a)
         y = (-b-sqroot)/(2*a)
         maximum = max(x,y)
-        print(maximum)
+        print(int(maximum))
 
     elif discriminant == 0:
         print(-b/(2*a))
@@ -19,9 +19,9 @@ def getX(a,b,c):
         maxi = max(x1,y1)
         print(maxi)
 
-a = -1
-b = 3
-c = 3
+a = 1
+b = 2
+c = -4
 
 if a == 0:
     print('Incorrect equation')
