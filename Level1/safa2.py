@@ -1,3 +1,7 @@
 import numpy as np
-values = [1,-2,3]
-np.roots(values)
+
+def getX():
+    coeff = [1,2,-4]
+    maximum = max(np.roots(coeff))
+    print(maximum)
+getX()
