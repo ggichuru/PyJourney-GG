@@ -1,0 +1,27 @@
+*Given an array arr[] of n elements, write a function to search a given element of x in an arr[]*
+
+# Liner search
+    1. Start from the left most element in the array and one by one compare x with the elements.
+    2. If x matches with an element, return that elements index.
+    3. Else return -1
+    
+        The time complexity of this algorithm is 0(n).
+        Linear search is barely used practicaly because other search algorithms such as binary search algorithms and hash tables allow faster-searching.
+
+
+
+
+# Binary Search
+    1. Compare x with the middle element
+    2. If x mathches with the middle element, return the mid index.
+    3. Else if x > mid element, then x can only be in the right(greater) half subarry after mid element. Then we apply the algorithm again for the right half.
+    4. Else if x < mid element, then x lies in the left(lower half). apply algo to left half.
+
+**The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n)**
+            The algorithm searches a sorted array by repeatedly dividing the search interval into half. Begin with an interval covering the whole array. If the value of the search key is less than the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half. Repeatedly check until the value is found or the interval is empty. 
+        
+        The time complexity is T(n) = T(n/2) + c
+        The above recurrence can be solved either using Recurrence T ree method or Master method. It falls in case II of Master Method and solution of the recurrence is Theta(Logn).
+
+        Auxiliary Space: O(1) in case of iterative implementation. In case of recursive implementation, O(Logn) recursion call stack space.
+

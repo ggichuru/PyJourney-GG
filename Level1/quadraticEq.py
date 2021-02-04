@@ -11,7 +11,7 @@ def getX(a,b,c):
         y = (-b-sqroot)/(2*a)
         maximum = max(x,y)
         print(int(maximum))
-
+        
     elif discriminant == 0:
         print(-b/(2*a))
     else:
