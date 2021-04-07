@@ -4,6 +4,9 @@ class Node:
         self.right = None
         self.val = key
 
+    def printTree(self):
+        print(self.val)
+
 # create root
 root = Node(1)
 ''' following is the tree after above statement
@@ -29,3 +32,5 @@ root.left.left = Node(4)
    4    None  None  None
   /  \
 None None'''
+
+root. printTree()
