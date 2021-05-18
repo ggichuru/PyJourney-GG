@@ -49,15 +49,4 @@ def learn_args_kargs(*args, **kargs):
 print(learn_args_kargs(1,2,3,4, extra_name = 5, name='akex'))
 
 print()
-class Book(object):
-    def __init__(self, title, author, price):
-        self.title = title
-        self.author = author
-        self.price = price
-    def format_citation(self):
-        return '%s by %s \t price: € %s' % (self.title, self.author, self.price)
 
-ldr = Book("The Lord of the Rings", "JRR Tolkien", 24)
-npa = Book("Nine Princes in Amber", "R Zelazny", 12)
-
-print(ldr.format_citation())
